@@ -1,0 +1,53 @@
+[project]
+name = "naive-ieee754"
+version = "0.1.0"
+description = "An educational IEEE 754 floating-point library that stores every bit explicitly so you can watch the chaos unfold."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Francisco Corrêa Dias", email = "fcdiass@gmail.com" }
+]
+requires-python = ">=3.10"
+keywords = [
+    "ieee754", "floating-point", "education", "binary",
+    "numerics", "visualization", "computer-science",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "matplotlib>=3.7",
+    "tqdm>=4.60",
+]
+
+[project.urls]
+Homepage = "https://github.com/fcdiass/naive-ieee754"
+Repository = "https://github.com/fcdiass/naive-ieee754"
+Changelog = "https://github.com/fcdiass/naive-ieee754/blob/main/CHANGELOG.md"
+Issues = "https://github.com/fcdiass/naive-ieee754/issues"
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.0",
+    "ruff>=0.15.13",
+    "pytest>=9.0.3",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.0",
+]
